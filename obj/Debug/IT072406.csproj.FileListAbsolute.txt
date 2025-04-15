@@ -4,3 +4,9 @@ C:\dev\CSHRP\IT072406\IT072406\obj\Debug\IT072406.csproj.AssemblyReference.cache
 C:\dev\CSHRP\IT072406\IT072406\obj\Debug\IT072406.csproj.CoreCompileInputs.cache
 C:\dev\CSHRP\IT072406\IT072406\obj\Debug\IT072406.exe
 C:\dev\CSHRP\IT072406\IT072406\obj\Debug\IT072406.pdb
+C:\dev\CSHRP\IT072406\IT072406\CSHRP-Lernprozess\bin\Debug\IT072406.exe
+C:\dev\CSHRP\IT072406\IT072406\CSHRP-Lernprozess\bin\Debug\IT072406.pdb
+C:\dev\CSHRP\IT072406\IT072406\CSHRP-Lernprozess\obj\Debug\IT072406.csproj.AssemblyReference.cache
+C:\dev\CSHRP\IT072406\IT072406\CSHRP-Lernprozess\obj\Debug\IT072406.csproj.CoreCompileInputs.cache
+C:\dev\CSHRP\IT072406\IT072406\CSHRP-Lernprozess\obj\Debug\IT072406.exe
+C:\dev\CSHRP\IT072406\IT072406\CSHRP-Lernprozess\obj\Debug\IT072406.pdb
