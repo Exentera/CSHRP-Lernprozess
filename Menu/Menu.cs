@@ -1,41 +1,48 @@
 ﻿using System;
 
-// String-Array als Eingabe für wählbare Optionen
-// Gibt den Index der gewählten Option als int zurück
+// String array as input for selectable options
+// Returns the index of the selected option as an int
 
-// Beispiel für Aufruf und Initialisierung:
-// string[] optionen = { "Option_1", "Option_2", "Option_3", /* usw. */ };
-// int gewählteOption = Menu.ShowMenu(optionen);
+// Example for calling and initialization:
+// string[] options = { "Option_1", "Option_2", "Option_3", /* etc. */ };
+// int selectedOption = Menu.ShowMenu(options);
+
+
 
 public class Menu
 {
-    public static int ShoweMenu(string[] optionen)
+    /// <summary>
+    /// Displays the menu
+    /// </summary>
+    /// <param name="options"></param>
+    /// <returns></returns>
+    public static int ShoweMenu(string[] options)
     {
-        int auswahl = 0;
+        int selectedIndex = 0;
         ConsoleKey key;
         do
         {
             Console.Clear();
-            for (int i = 0; i < optionen.Length; i++)
+            for (int i = 0; i < options.Length; i++)
             {
-                if (i == auswahl)
+                if (i == selectedIndex)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"> {optionen[i]}");
+                    Console.WriteLine($"> {options[i]}");
                     Console.ResetColor();
                 }
                 else
                 {
-                    Console.WriteLine($" {optionen[i]}");
+                    Console.WriteLine($" {options[i]}");
                 }
             }
             key = Console.ReadKey(true).Key;
-            if (key == ConsoleKey.UpArrow && auswahl > 0)
-                auswahl--;
-            else if (key == ConsoleKey.DownArrow && auswahl < optionen.Length - 1)
-                auswahl++;
+            if (key == ConsoleKey.UpArrow && selectedIndex > 0)
+                selectedIndex--;
+            else if (key == ConsoleKey.DownArrow && selectedIndex < options.Length - 1)
+                selectedIndex++;
         } while (key != ConsoleKey.Enter);
         Console.Clear();
-        return auswahl;
+        return selectedIndex;
     }
 }
