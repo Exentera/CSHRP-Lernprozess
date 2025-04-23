@@ -101,6 +101,8 @@
         <Compile Include="UML\Linie.cs" />
         <Compile Include="UML\Punkt.cs" />
         <Compile Include="UML\Rechteck.cs" />
+        <Compile Include="UML\Sequenzdiagramm\Sequenz.cs" />
+        <Compile Include="UML\Sequenzdiagramm\Sequenzdiagramm A_5_1.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

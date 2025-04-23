@@ -11,18 +11,14 @@
 
 public class Menu
 {
-    /// <summary>
-    /// Displays the menu
-    /// </summary>
-    /// <param name="options"></param>
-    /// <returns></returns>
-    public static int ShoweMenu(string[] options)
+    public static int ShoweMenu(string headderText, string[] options)
     {
         int selectedIndex = 0;
         ConsoleKey key;
         do
         {
             Console.Clear();
+            Console.WriteLine(headderText);
             for (int i = 0; i < options.Length; i++)
             {
                 if (i == selectedIndex)
